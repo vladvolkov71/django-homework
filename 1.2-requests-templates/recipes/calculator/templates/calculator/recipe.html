@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Рецепт: {{name}}</title>
+</head>
+<body>
+
+<h1>Рецепт {{name}} на {{num}} персон</h1>
+
+{% if recipe %}
+{% for k, v in recipe.items %}
+    <ul>
+        <li>{{ k }}: {{ v }}</li>
+    </ul>
+{% endfor %}
+{% else %}
+    <p>Рецепт не найден</p>
+{% endif %}
+
+</body>
+</html>
+

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Рецепты</title>
+</head>
+<body>
+<h1>Рецепты</h1>
+
+{% for title in recipes %}
+        <a href="{{ title }}">{{ title }}</a>
+        <br>
+{% endfor %}
+
+</body>
+</html>
