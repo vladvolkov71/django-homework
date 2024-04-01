@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div class="row">
+    {% for book in books %}
+        <div class="book col-md-4">
+            <h2>{{ book.name }}</h2>
+            <p>Автор: {{ book.autor }}</p>
+            <p>Дата публикации: {{ book.pub_date }}</p>
+        </div>
+    {% endfor %}
+</div>
+
+{% if data_prev%}
+    <a href="/books/{{ data_prev }}">< {{ data_prev }}  </a>
+{% endif %}
+{% if data_next%}
+    <a href="/books/{{ data_next }}"> {{ data_next }} ></a>
+{% endif %}
+
+</body>
+</html>

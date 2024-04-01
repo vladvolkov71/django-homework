@@ -1,7 +1,7 @@
 [
   {
     "model": "books.book",
-    "pk": 1,
+
     "fields": {
       "name": "Война и мир",
       "author": "Ф.Д. Достоевский",
@@ -10,11 +10,47 @@
   },
   {
     "model": "books.book",
-    "pk": 2,
+
     "fields": {
       "name": "1984",
       "author": "Джордж Оруэл",
       "pub_date": "2016-12-06"
+    }
+  },
+  {
+    "model": "books.book",
+
+    "fields": {
+      "name": "aaaaa",
+      "author": "bbbb",
+      "pub_date": "2019-12-06"
+    }
+  },
+  {
+    "model": "books.book",
+
+    "fields": {
+      "name": "bbbb",
+      "author": "cccc",
+      "pub_date": "2020-12-06"
+    }
+  },
+  {
+    "model": "books.book",
+
+    "fields": {
+      "name": "dddd",
+      "author": "eeee",
+      "pub_date": "2016-10-06"
+    }
+  },
+  {
+    "model": "books.book",
+
+    "fields": {
+      "name": "ffff",
+      "author": "gggg",
+      "pub_date": "2016-12-05"
     }
   }
 ]
