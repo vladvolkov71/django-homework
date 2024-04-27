@@ -43,7 +43,3 @@ Content-Type: application/json
 # получение информации по датчику
 GET {{baseUrl}}/sensors/1/
 Content-Type: application/json
-
-{
-  "sensor_id": 1
-}
