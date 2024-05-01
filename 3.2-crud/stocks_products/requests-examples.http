@@ -41,6 +41,11 @@ Content-Type: application/json
 
 ###
 
+GET {{baseUrl}}/products/?search=лучш
+Content-Type: application/json
+
+###
+
 # создание склада
 POST {{baseUrl}}/stocks/
 Content-Type: application/json
@@ -84,6 +89,12 @@ Content-Type: application/json
 
 ###
 
-# поиск складов, где есть определенный продукт
+# поиск складов, где есть определенный продукт по id
 GET {{baseUrl}}/stocks/?products=2
+Content-Type: application/json
+
+###
+
+# поиск складов, где есть определенный продукт по имени
+GET {{baseUrl}}/stocks/?search=картошка
 Content-Type: application/json
